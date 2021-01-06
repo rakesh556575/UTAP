@@ -16,5 +16,5 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - uses: actions/checkout@v2
       - run: docker build -t rakesh556575/utap:ui .
-      - run: docker push -t rakesh556575/utap:ui
+      - run: docker push  rakesh556575/utap:ui
 
