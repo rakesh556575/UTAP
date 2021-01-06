@@ -11,8 +11,8 @@ jobs:
     steps:
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
         env:
-            DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-            DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
+            DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+            DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
       - uses: actions/checkout@v2
       - run: docker build -t rakesh556575/utap:UI .
 
