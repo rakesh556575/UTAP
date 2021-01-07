@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: UI-app
+  name: ui
   labels:
-    app: UI
+    app: ui
     env: dev
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: UI
+      app: ui
   template:
     metadata:
       labels:
-        app: UI
+        app: ui
         env: dev
     spec:
       containers:
-        - name: UI
+        - name: ui
           image: rakesh556575/utap:ui
           ports:
             - name:  http
