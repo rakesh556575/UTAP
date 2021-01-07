@@ -1,5 +1,4 @@
-FROM python:3
-FROM django
+FROM python:3.8.3-alpine
 
 ADD . /UTAP
 
