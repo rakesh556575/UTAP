@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  UI-svc
+spec:
+  selector:
+    app:  UI
+  type:  LoadBalancer
+  ports:
+    - name:  http
+      port:  80
+      targetPort: 8080

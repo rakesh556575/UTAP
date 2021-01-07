@@ -24,4 +24,9 @@ jobs:
           creds: '${{ secrets.AZURE_CREDENTIALS }}'
           cluster-name: UTAP
           resource-group: DefaultResourceGroup-EUS
+      - uses: Azure/k8s-deploy@v1
+        with:
+            manifests: |
+              manifests/deployment.yaml
+              manifests/service.yaml
 
