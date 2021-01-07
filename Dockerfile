@@ -1,6 +1,6 @@
+FROM python:3
 FROM django
-RUN apt-get update -y
-RUN apt-get install python-pip -y
+
 ADD . /UTAP
 
 WORKDIR /UTAP
