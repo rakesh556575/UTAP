@@ -17,8 +17,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - uses: actions/checkout@v2
-      - run: docker build -t rakesh556575/ui:vers4 .
-      - run: docker push  rakesh556575/ui:vers4
+      - run: docker build -t rakesh556575/ui:vers5 .
+      - run: docker push  rakesh556575/ui:vers5
       - uses: Azure/aks-set-context@v1
         with:
           creds: '${{ secrets.AZURE_CREDENTIALS }}'

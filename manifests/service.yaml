@@ -4,7 +4,7 @@ metadata:
   name:  uisvc
 spec:
   selector:
-    app:  uisvc
+    app:  ui
   type:  LoadBalancer
   ports:
     - name:  http

@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ui
+  name: uidep
   labels:
     app: ui
     env: dev
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: ui
-          image: rakesh556575/ui:vers4
+          image: rakesh556575/ui:vers5
           imagePullPolicy: Always
           ports:
             - name:  http
