@@ -29,4 +29,5 @@ jobs:
             manifests: |
               manifests/deployment.yaml
               manifests/service.yaml
+              manifests/ingresssvc.yaml
 
