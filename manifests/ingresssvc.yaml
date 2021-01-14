@@ -15,6 +15,6 @@ spec:
               serviceName: uisvc
               servicePort: 80
           - path: /auth
-              backend:
+            backend:
                 serviceName: authsvc
                 servicePort: 3000
