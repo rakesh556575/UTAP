@@ -10,7 +10,7 @@ spec:
     - host:
       http:
         paths:
-          - path: /ui
+          - path: /
             backend:
               serviceName: uisvc
               servicePort: 80
