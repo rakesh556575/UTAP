@@ -1,4 +1,3 @@
-version: 6
 name: ci
 
 on:
@@ -8,6 +7,8 @@ on:
 jobs:
   Build:
     runs-on: ubuntu-latest
+    env:
+      version: 6
     steps:
 
 
@@ -18,8 +19,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - uses: actions/checkout@v2
-      - run: cd uiapp && docker build -t rakesh556575/ui:vers'${{ version }}' .
-      - run: docker push  rakesh556575/ui:vers'${{ version }}'
+      - run: cd uiapp && docker build -t rakesh556575/ui:vers${version}' .
+      - run: docker push  rakesh556575/ui:vers'${ version }'
       - uses: Azure/aks-set-context@v1
         with:
           creds: '${{ secrets.AZURE_CREDENTIALS }}'
