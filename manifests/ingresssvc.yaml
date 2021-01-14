@@ -12,5 +12,5 @@ spec:
         paths:
           - path: /
             backend:
-              serviceName: ui
+              serviceName: uisvc
               servicePort: 80
