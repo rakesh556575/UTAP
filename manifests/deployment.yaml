@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: ui
-          image: rakesh556575/ui:vers5
+          image: rakesh556575/ui:vers7
           imagePullPolicy: Always
           ports:
             - name:  http
