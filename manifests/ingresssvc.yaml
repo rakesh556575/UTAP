@@ -19,6 +19,6 @@ spec:
                 serviceName: authsvc
                 servicePort: 3000
           - path: /kibana
-              backend:
+            backend:
                 serviceName: kibana-logging
                 servicePort: 5601
